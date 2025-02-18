@@ -3,7 +3,7 @@ yotpo:
   chartName: chartmuseum
   chartPath: https://chartmuseum.github.io/charts
   chartVersion: 3.8.0
-  namespace: infra
+  namespace: default
 
 extraArgs: []
   # - --storage-timestamp-tolerance 1s
