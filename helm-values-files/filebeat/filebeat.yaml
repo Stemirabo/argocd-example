@@ -3,7 +3,7 @@ yotpo:
   deploymentName: filebeat-test
   chartPath: https://helm.elastic.co
   chartVersion: 7.17.3
-  namespace: infra
+  namespace: default
 
 ---
 daemonset:
