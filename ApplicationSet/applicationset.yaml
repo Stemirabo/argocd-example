@@ -6,7 +6,7 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/YotpoLtd/argocd-example.git
+      repoURL: https://github.com/Stemirabo/argocd-example.git
       revision: HEAD
       files:
       - path: "helm-values-files/**/*.yaml"
@@ -20,7 +20,7 @@ spec:
       project: "{{ yotpo.namespace }}"
       source:
         path: "./"
-        repoURL: https://github.com/YotpoLtd/argocd-example.git
+        repoURL: https://github.com/Stemirabo/argocd-example.git
         targetRevision: HEAD
         plugin:
           name: helm-yotpo
