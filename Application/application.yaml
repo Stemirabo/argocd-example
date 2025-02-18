@@ -3,12 +3,12 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: application-telegraf-test
-  namespace: infra
+  namespace: default
 spec:
   destination:
-    namespace: infra
+    namespace: default
     server: https://kubernetes.default.svc
-  project: infra
+  project: default
   source:
     path: "helm-values-files/telegraf"
     repoURL: https://github.com/YotpoLtd/argocd-example.git
@@ -21,7 +21,7 @@ spec:
         - name: HELM_CHART_VERSION
           value: "1.8.18"
         - name: NAMESPACE
-          value: "infra"
+          value: "default"
         - name: HELM_REPO_URL
           value: "https://helm.influxdata.com/"
         - name: HELM_CHART_NAME
